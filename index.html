@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Math Playground — Fun and interactive math games, lessons, and puzzles for all ages. Learn and play with numbers at mathplayground.eu.org!" />
+  <title>Math Playground | Learn & Play with Numbers</title>
+
+  <style>
+    :root {
+      --primary: #0077ff;
+      --accent: #ffb703;
+      --bg: #f5f7fa;
+      --text: #222;
+      --radius: 8px;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: var(--primary);
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 500;
+      transition: opacity 0.2s;
+    }
+
+    nav a:hover {
+      opacity: 0.8;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    #hero {
+      text-align: center;
+      padding: 6rem 2rem;
+      background: linear-gradient(120deg, #0077ff, #00c6ff);
+      color: white;
+      border-radius: 0 0 var(--radius) var(--radius);
+    }
+
+    #hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    #hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      background: var(--accent);
+      color: #000;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: var(--radius);
+      font-weight: 600;
+      text-decoration: none;
+      transition: transform 0.2s;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    footer {
+      background: #111;
+      color: #bbb;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Math Playground</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#games">Games</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <h2>Learn. Play. Master Math.</h2>
+    <p>Interactive math games, puzzles, and challenges to make learning fun!</p>
+    <a href="#games" class="btn">Start Playing</a>
+  </section>
+
+  <section id="about">
+    <h2>About Math Playground</h2>
+    <p>
+      At <strong>MathPlayground.eu.org</strong>, we believe learning math should be as exciting as playing a game.
+      Our platform offers engaging challenges, brain teasers, and problem-solving adventures that help kids and
+      students improve their math skills while having fun.
+    </p>
+  </section>
+
+  <section id="games">
+    <h2>Popular Math Games</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>🧮 Quick Add</h3>
+        <p>Test your speed and accuracy with rapid-fire addition problems.</p>
+      </div>
+      <div class="card">
+        <h3>📏 Geometry Dash</h3>
+        <p>Explore shapes, angles, and patterns in this interactive geometry challenge.</p>
+      </div>
+      <div class="card">
+        <h3>💡 Logic Builder</h3>
+        <p>Solve fun logic puzzles to strengthen your reasoning and critical thinking.</p>
+      </div>
+      <div class="card">
+        <h3>🎯 Fraction Frenzy</h3>
+        <p>Master fractions and ratios through colorful, visual mini-games.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>
+      Have feedback or ideas for new games? Reach out at
+      <a href="mailto:contact@mathplayground.eu.org">contact@mathplayground.eu.org</a>.
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2025 <strong>MathPlayground.eu.org</strong> — Learn & Play with Numbers.</p>
+    <p>Built with ❤️ for curious minds.</p>
+  </footer>
+
+  <script>
+    // Simple scroll animation
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>
