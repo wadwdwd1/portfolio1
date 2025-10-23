@@ -3,24 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Math Playground — Fun and interactive math games, lessons, and puzzles for all ages. Learn and play with numbers at mathplayground.eu.org!" />
-  <title>Math Playground | Learn & Play with Numbers</title>
+  <meta name="description" content="Math Playground — Explore lessons, tutorials, and resources to make learning math simple and engaging. Visit mathplayground.eu.org to learn more!" />
+  <title>Math Playground | Learn Mathematics the Smart Way</title>
 
   <style>
     :root {
-      --primary: #0077ff;
-      --accent: #ffb703;
-      --bg: #f5f7fa;
+      --primary: #0066cc;
+      --accent: #f2a900;
+      --bg: #f9fafc;
       --text: #222;
       --radius: 8px;
     }
 
     body {
       margin: 0;
-      font-family: "Poppins", sans-serif;
+      font-family: "Inter", "Segoe UI", sans-serif;
       background: var(--bg);
       color: var(--text);
       scroll-behavior: smooth;
+      line-height: 1.6;
     }
 
     header {
@@ -37,7 +38,7 @@
 
     header h1 {
       margin: 0;
-      font-size: 1.5rem;
+      font-size: 1.6rem;
     }
 
     nav a {
@@ -54,14 +55,14 @@
 
     section {
       padding: 4rem 2rem;
-      max-width: 1000px;
+      max-width: 900px;
       margin: auto;
     }
 
     #hero {
       text-align: center;
       padding: 6rem 2rem;
-      background: linear-gradient(120deg, #0077ff, #00c6ff);
+      background: linear-gradient(120deg, #0066cc, #00aaff);
       color: white;
       border-radius: 0 0 var(--radius) var(--radius);
     }
@@ -93,7 +94,7 @@
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 1.5rem;
       margin-top: 2rem;
     }
@@ -130,63 +131,67 @@
     <h1>Math Playground</h1>
     <nav>
       <a href="#about">About</a>
-      <a href="#games">Games</a>
+      <a href="#resources">Resources</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <section id="hero">
-    <h2>Learn. Play. Master Math.</h2>
-    <p>Interactive math games, puzzles, and challenges to make learning fun!</p>
-    <a href="#games" class="btn">Start Playing</a>
+    <h2>Master Math with Confidence</h2>
+    <p>Clear explanations, guided examples, and helpful study materials — all in one place.</p>
+    <a href="#resources" class="btn">Explore Resources</a>
   </section>
 
   <section id="about">
     <h2>About Math Playground</h2>
     <p>
-      At <strong>MathPlayground.eu.org</strong>, we believe learning math should be as exciting as playing a game.
-      Our platform offers engaging challenges, brain teasers, and problem-solving adventures that help kids and
-      students improve their math skills while having fun.
+      <strong>MathPlayground.eu.org</strong> is an independent educational website dedicated to making
+      mathematics easier to understand. We provide step-by-step tutorials, formula guides, and helpful
+      visual explanations for students and teachers alike.
+    </p>
+    <p>
+      Our mission is to turn challenging math concepts into approachable, engaging lessons — empowering
+      learners to build confidence in problem-solving and logical reasoning.
     </p>
   </section>
 
-  <section id="games">
-    <h2>Popular Math Games</h2>
+  <section id="resources">
+    <h2>Learning Resources</h2>
     <div class="grid">
       <div class="card">
-        <h3>🧮 Quick Add</h3>
-        <p>Test your speed and accuracy with rapid-fire addition problems.</p>
+        <h3>📘 Algebra Essentials</h3>
+        <p>Understand linear equations, functions, and inequalities with simple explanations and examples.</p>
       </div>
       <div class="card">
-        <h3>📏 Geometry Dash</h3>
-        <p>Explore shapes, angles, and patterns in this interactive geometry challenge.</p>
+        <h3>📏 Geometry Fundamentals</h3>
+        <p>Learn about shapes, theorems, and geometric reasoning with clear diagrams and proofs.</p>
       </div>
       <div class="card">
-        <h3>💡 Logic Builder</h3>
-        <p>Solve fun logic puzzles to strengthen your reasoning and critical thinking.</p>
+        <h3>📊 Statistics & Probability</h3>
+        <p>Interpret data, calculate probabilities, and explore statistical models in real-world contexts.</p>
       </div>
       <div class="card">
-        <h3>🎯 Fraction Frenzy</h3>
-        <p>Master fractions and ratios through colorful, visual mini-games.</p>
+        <h3>🧮 Calculus Basics</h3>
+        <p>Discover the power of limits, derivatives, and integrals — the foundation of advanced mathematics.</p>
       </div>
     </div>
   </section>
 
   <section id="contact">
-    <h2>Contact Us</h2>
+    <h2>Contact</h2>
     <p>
-      Have feedback or ideas for new games? Reach out at
-      <a href="mailto:contact@mathplayground.eu.org">contact@mathplayground.eu.org</a>.
+      Questions or suggestions? We’d love to hear from you!  
+      Email us at <a href="mailto:contact@mathplayground.eu.org">contact@mathplayground.eu.org</a>.
     </p>
   </section>
 
   <footer>
-    <p>© 2025 <strong>MathPlayground.eu.org</strong> — Learn & Play with Numbers.</p>
-    <p>Built with ❤️ for curious minds.</p>
+    <p>© 2025 <strong>MathPlayground.eu.org</strong> — Learning Made Simple.</p>
+    <p>Built with ❤️ for students and teachers everywhere.</p>
   </footer>
 
   <script>
-    // Simple scroll animation
+    // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function(e) {
         e.preventDefault();
